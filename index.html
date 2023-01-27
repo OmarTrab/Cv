@@ -1,41 +1,58 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <stile>
-            <button id="theme-toggle-btn">Toggle Theme</button>
+  <head>
+    <style>
+      /* Add styling for the toggle button */
+      #theme-toggle-btn {
+        background-color: #ddd;
+        color: black;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
 
-<script>
-    // Get the button and body elements
-    const toggleBtn = document.getElementById("theme-toggle-btn");
-    const body = document.body;
+      /* Add styling for the light theme */
+      .light {
+        background-color: white;
+        color: black;
+      }
 
-    // Add a click event listener to the button
-    toggleBtn.addEventListener("click", function() {
+      /* Add styling for the dark theme */
+      .dark {
+        background-color: black;
+        color: white;
+      }
+    </style>
+    <script>
+      // Get the button and body elements
+      const toggleBtn = document.getElementById("theme-toggle-btn");
+      const body = document.body;
+
+      // Add a click event listener to the button
+      toggleBtn.addEventListener("click", function() {
         // If the body has the "light" class, remove it and add the "dark" class
         // Otherwise, remove the "dark" class and add the "light" class
         if (body.classList.contains("light")) {
-            body.classList.remove("light");
-            body.classList.add("dark");
+          body.classList.remove("light");
+          body.classList.add("dark");
         } else {
-            body.classList.remove("dark");
-            body.classList.add("light");
+          body.classList.remove("dark");
+          body.classList.add("light");
         }
-    });
-</script>
-        </style>    
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Omar Trabelsi</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./styles/main.css">
-    </head>
-    <body>
-        <div id="container--main">
-            
-           
-            <section id="wrapper--hero" class="section--page">
-                <img id="profile-pic" src="./assets/images/profile_pic.JPG">
+      });
+    </script>    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Omar Trabelsi</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles/main.css">
+  </head>
+  <body class="light">
+    <div id="container--main">
+      <button id="theme-toggle-btn">Toggle Theme</button>
+      <section id="wrapper--hero" class="section--page">
+        <img id="profile-pic" src="./assets/images/profile_pic.JPG" alt="Profile Picture">
 
                 <div>
                     <h1 id="user-name">Omar Trabelsi</h1>
