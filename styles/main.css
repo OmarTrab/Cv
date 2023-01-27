@@ -13,6 +13,8 @@
     --mainBorderColor-dark:#2b3031;
     --mainBgColor-dark:#131415;
     
+    
+    
     --mainTextColor:var(--mainTextColor-dark);
     --secondaryTextColor:var(--secondaryTextColor-dark);
     --mainLinkColor:var(--mainLinkColor-dark);
@@ -171,6 +173,16 @@ li{
         width: 200px;
         height: 200px;
     }
+    
+    body.light {
+    background-color: #fff;
+    color: #000;
+    }
+    body.dark {
+        background-color: #000;
+        color: #fff;
+}
+
 
     #wrapper--hero{
         flex-direction: column;
