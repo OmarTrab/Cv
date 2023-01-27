@@ -174,15 +174,6 @@ li{
         height: 200px;
     }
     
-    body.light {
-    background-color: #fff;
-    color: #000;
-    }
-    body.dark {
-        background-color: #000;
-        color: #fff;
-}
-
 
     #wrapper--hero{
         flex-direction: column;
