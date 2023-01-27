@@ -10,6 +10,28 @@
     </head>
     <body>
         <div id="container--main">
+            
+            <button id="theme-toggle-btn">Toggle Theme</button>
+
+<script>
+    // Get the button and body elements
+    const toggleBtn = document.getElementById("theme-toggle-btn");
+    const body = document.body;
+
+    // Add a click event listener to the button
+    toggleBtn.addEventListener("click", function() {
+        // If the body has the "light" class, remove it and add the "dark" class
+        // Otherwise, remove the "dark" class and add the "light" class
+        if (body.classList.contains("light")) {
+            body.classList.remove("light");
+            body.classList.add("dark");
+        } else {
+            body.classList.remove("dark");
+            body.classList.add("light");
+        }
+    });
+</script>
+
            
 
 
