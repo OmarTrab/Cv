@@ -1,4 +1,4 @@
-# CV - Omar Trabelsi
+# Digital Resume - Omar Trabelsi
 Go to this link to see my Cv: https://omartrab.github.io/Cv
 
 Technologies Used:
