@@ -108,7 +108,11 @@
                   
               <footer>
                   <div class="container">
-                  <p>Copyright © <?php echo date("Y"); ?> omartrab.github.io/Cv.All rights reserved..</p>
+                  <script>
+                    var currentYear = new Date().getFullYear();
+                    document.write("Copyright © " + currentYear + " omartrab.github.io/Cv. All rights reserved.");
+                  </script>
+
                   </div>
               </footer> 
               </section>
